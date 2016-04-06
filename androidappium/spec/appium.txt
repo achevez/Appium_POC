@@ -1,0 +1,11 @@
+[caps]
+platformName = "Android"
+platformVersion = "5.1"
+deviceName = "Samsung Galaxy S6 - 5.1.0 - API 22 - 1440x2560"
+app = "./sageMobile-release.apk"
+
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false
+wait = 60
