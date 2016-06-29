@@ -8,12 +8,9 @@ describe 'As a gap user, ' do
   let(:username) { 'gap' }
   let(:password) { 'android428' }
 
-  it 'I am able to login successfully' do
+  it 'I am able to login and logout successfully' do
     login_page.login(username, password)
     expect(home_page.product_search.displayed?).to be(true)
-  end
-
-  it 'I am able to logout successfully' do
     menu.logout
     expect(login_page.username.displayed?).to be(true)
   end
