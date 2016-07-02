@@ -21,8 +21,8 @@ def setup_driver
   Appium::Driver.new caps
 end
 
-PAGE_OBJECTS = [RSpec::Core::ExampleGroup, Pages::HomePage, Pages::LoginPage, Pages::Menu, 
-                Pages::Products]
+PAGE_OBJECTS = [RSpec::Core::ExampleGroup, Pages::HomePage, Pages::LoginPage, Pages::Menu,
+                Pages::Products, Pages::Supplier]
 
 def promote_methods
   PAGE_OBJECTS.each { |page| Appium.promote_appium_methods page }

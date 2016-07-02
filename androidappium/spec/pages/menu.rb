@@ -4,7 +4,6 @@ module Pages
   class Menu
 
     def open
-      #first_button.click
       id('buttonDrawerMenu').click
     end
 
@@ -22,6 +21,12 @@ module Pages
       open
       id('menu_item_products').click
       Products.new
+    end
+
+    def suppliers
+      open
+      id('menu_item_suppliers').click
+      Supplier.new
     end
   end
 end
