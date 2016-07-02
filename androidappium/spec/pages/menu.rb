@@ -4,7 +4,8 @@ module Pages
   class Menu
 
     def open
-      first_button.click
+      #first_button.click
+      id('buttonDrawerMenu').click
     end
 
     def logout
@@ -15,6 +16,12 @@ module Pages
 
     def confirm_logout
       first_button.click
+    end
+
+    def products_search
+      open
+      id('menu_item_products').click
+      Products.new
     end
   end
 end
