@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Pages
-  class Products
+  class ProductsPage
     def select_category
       id('btnCategory').click
     end

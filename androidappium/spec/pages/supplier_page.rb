@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Pages
-  class Supplier
+  class SupplierPage
     def search_company
       id('buttonSupplierList').click
     end
