@@ -34,5 +34,17 @@ module Pages
       id('menu_item_tradeshows').click
       TradeshowsPage.new
     end
+
+    def orders
+      open
+      id('menu_item_orders').click
+      OrdersPage.new
+    end
+
+    def publications
+      open
+      id('menu_item_publications').click
+      PublicationsPage.new
+    end
   end
 end
