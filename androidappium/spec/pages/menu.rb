@@ -46,5 +46,11 @@ module Pages
       id('menu_item_publications').click
       PublicationsPage.new
     end
+
+    def settings
+      open
+      id('menu_item_settings').click
+      SettingsPage.new
+    end
   end
 end
